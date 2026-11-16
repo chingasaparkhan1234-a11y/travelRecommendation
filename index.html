@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TravelBloom - Explore Dream Destination</title>
+  <link rel="stylesheet" href="travel_recommendation.css">
+</head>
+<body>
+
+  <!-- Navigation Bar containing all 6 required elements -->
+  <nav>
+    <div class="nav-brand">
+      <span>TravelBloom</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about_us.html">About Us</a></li>
+      <li><a href="contact_us.html">Contact Us</a></li>
+    </ul>
+    <div class="nav-search">
+      <input type="text" id="search-input" placeholder="Enter a destination or keyword">
+      <button id="btn-search" class="btn-search">Search</button>
+      <button id="btn-clear" class="btn-clear">Clear</button>
+    </div>
+  </nav>
+
+  <!-- Main Hero & Recommendations Container -->
+  <main class="main-content">
+    <section class="hero-section">
+      <h1>EXPLORE<br>DREAM<br>DESTINATION</h1>
+      <p>
+        Discover breathtaking beaches, sacred historic temples, and vibrant global destinations. 
+        Plan your next getaway with personalized recommendations curated for your dream travel experience.
+      </p>
+      <button class="btn-book">Book Now</button>
+
+      <div class="social-icons">
+        <a href="#twitter" title="Twitter">&#128038; Twitter</a>
+        <a href="#facebook" title="Facebook">&#128279; Facebook</a>
+        <a href="#instagram" title="Instagram">&#128247; Instagram</a>
+        <a href="#youtube" title="YouTube">&#9658; YouTube</a>
+      </div>
+    </section>
+
+    <!-- Search Results / Recommendations Container (Grid display) -->
+    <section id="results-container" class="recommendations-container">
+      <!-- Recommendations will be populated here dynamically by travel_recommendation.js -->
+    </section>
+  </main>
+
+  <script src="travel_recommendation.js"></script>
+</body>
+</html>
